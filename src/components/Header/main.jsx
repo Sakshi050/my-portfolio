@@ -68,7 +68,7 @@ const Container = styled.div`
   width: 85%;
   max-width: 1280px;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 1;-portfolio
 `;
 const Texts = styled.div`
   flex: 1;
