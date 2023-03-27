@@ -63,12 +63,12 @@ export default ProfComponent;
 const Container = styled.div`
   display: flex;
   gap: 2rem;
-//   background-color:lavender;
   padding-top: 3rem;
-  width: 85%;
   max-width: 1280px;
   margin: 0 auto;
-  z-index: 1;-portfolio
+//   background-color:lavender;
+  z-index: 1;
+  width: 85%;
 `;
 const Texts = styled.div`
   flex: 1;
@@ -77,13 +77,13 @@ const Texts = styled.div`
     padding: 0 0;
     font-weight: 500;
   }
+  p {
+    font-weight: 300;
+  }
   h1 {
     font-size: 2rem;
     font-family: "Secular One", sans-serif;
     letter-spacing: 2px;
-  }
-  p {
-    font-weight: 300;
   }
   button {
     padding: 0.7rem 2rem;
@@ -96,12 +96,12 @@ const Texts = styled.div`
     font-weight: 500;
     border-radius:8px;
     filter: drop-shadow(3px 3px 3px black);
-    :hover {
-      filter: drop-shadow(6px 6px 6px black);
-    }
     a{
       color:wheat;
       text-decoration:none;
+    }
+    :hover {
+      filter: drop-shadow(6px 6px 6px black);
     }
   }
 `;
@@ -114,16 +114,16 @@ const Social = styled.div`
     font-size: 0.9rem;
   }
   .social-icons {
+    gap: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
     span {
       width: 2.3rem;
       height: 2rem;
-      background-color: rgb(89 67 67);
       border-radius:20px;
-      position: relative;
+      background-color: rgb(89 67 67);
       transition: transform 400ms ease-in-out;
+      position: relative;
       :hover {
         transform: translateY(-7px);
       }
@@ -139,13 +139,13 @@ const Social = styled.div`
 `;
 const Profile = styled.div`
   img {
+    border-radius:8px;
     width: 25rem;
     filter: drop-shadow(0px 0px 10px black);
     transition: transform 400ms ease-in-out;
-    border-radius:8px;
     :hover {
-      transform: translateY(-10px);
       border-radius:15px;
+      transform: translateY(-10px);
     }
   }
 `;

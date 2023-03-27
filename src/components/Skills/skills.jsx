@@ -45,16 +45,16 @@ const Container = styled.div`
 h1{
     color:black;
 }
-  width: 85%;
   color:wheat;
+  width: 85%;
   margin: 0 auto;
   padding: 3rem 0;
 `;
 const Cards = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 4rem;
   gap: 3.5rem;
+  margin-top: 4rem;
   cursor:pointer;
 
 `;
