@@ -7,14 +7,19 @@ import {SiCplusplus} from "react-icons/si";
 import {FaJava} from "react-icons/fa";
 import {GrReactjs} from "react-icons/gr";
 import {Slide} from "react-awesome-reveal"
+import { Fade,Zoom } from "react-awesome-reveal";
 import Card from "../Skills/card";
+
 
 const skills = () => {
   return (
     <div>
       <Container id='skills'>
+        <Zoom>
             <h1>My Skills</h1>
+        </Zoom>
         <Cards>
+          <Fade cascade>
             <Slide direction='right'>
                 <Card Icon={FaHtml5} title={"HTML5"}/>
             </Slide>
@@ -24,15 +29,18 @@ const skills = () => {
             <Slide direction='right'>
                 <Card Icon={IoLogoJavascript} title={"JavaScript"}/>
             </Slide>
-            <Slide direction='left'>
+            </Fade>
+            <Fade cascade>
+            <Slide direction='right'>
                 <Card Icon={GrReactjs} title={"React"}/>
             </Slide>
-            <Slide direction='left'>
+            <Slide direction='right'>
                 <Card Icon={SiCplusplus} title={"C++"}/>
             </Slide>
-            <Slide direction='left'>
+            <Slide direction='right'>
                 <Card Icon={FaJava} title={"Java"}/>
             </Slide>
+          </Fade>
         </Cards>
       </Container>
     </div>
@@ -46,7 +54,7 @@ h1{
     color:black;
 }
   color:wheat;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   padding: 3rem 0;
 `;

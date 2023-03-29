@@ -7,13 +7,22 @@ import {FaLinkedinIn} from "react-icons/fa";
 import {CgProfile} from "react-icons/cg";
 import {BiMessageDetail} from "react-icons/bi";
 import styled from 'styled-components';
+import { Fade,Zoom } from "react-awesome-reveal";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
+function AnimatedComponent({ children }) {
+  return <Reveal keyframes={customAnimation}>{children}</Reveal>;
+}
 
 const footer = () => {
   return (
     <Container id="footer">
+      <Fade left>
         <Slide triggerOnce direction='left'>
+          <AnimatedComponent>
             <Profiles>
-            <h2>Contact me directly :</h2>
+            <h2 >Contact me directly :</h2>
             <div>
                 <span>
                 <FiPhoneCall/>
@@ -29,26 +38,35 @@ const footer = () => {
             <div className="profiles">
                 {/* <h2>Connect with me on:</h2> */}
                 <div>
+                  <Zoom>
+
                 <span>
                     <a href="https://github.com/Sakshi050">
                   <BsGithub />
                     </a>
                     GitHub
                 </span>
+                  </Zoom>
                 </div>
                 <div>
+                  <Zoom>
                 <span>
                 <a href="https://www.linkedin.com/in/sakshi-sahu-48079122a/">
                   <FaLinkedinIn />
                 </a>
                 LinkedIn
               </span>
+                  </Zoom>
                 </div>
             </div>
             </Profiles>
+          </AnimatedComponent>
         </Slide>
+      </Fade>
+      <Fade right>
         <Form>
         <Slide triggerOnce direction="right">
+          <AnimatedComponent>
           <form>
             <div className="name">
               <span>
@@ -70,19 +88,32 @@ const footer = () => {
             </div>
             <button>Submit</button>
           </form>
+          </AnimatedComponent>
         </Slide>
       </Form>
+      </Fade>
     </Container>
   )
 }
 
 export default footer
 
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(200px,100px,0);
+  }
+to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`
+
 const Container=styled.div`
   margin-top: 2rem;
   position: relative;
   padding: 2rem 0;
-  width: 85%;
+  width: 90%;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -135,13 +166,13 @@ const Form=styled.div`
         justify-content: center;
       }
     }
-    // .msg{
-    //     span{
-    //         size:10px;
-    //         align-items:flex-start;
-    //         padding-top:15px;
-    //     }
-    // }
+    .msg{
+        span{
+            size:10px;
+            align-items:flex-start;
+            padding-top:15px;
+        }
+    }
     button {
       width: 5rem;
       height: 1.8rem;

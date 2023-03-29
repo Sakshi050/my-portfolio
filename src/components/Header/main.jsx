@@ -6,12 +6,21 @@ import {FaLinkedinIn} from "react-icons/fa";
 import {ImTwitter} from "react-icons/im";
 import {Slide} from "react-awesome-reveal";
 import ss from "../Header/ss.png";
+import { Fade,Zoom } from "react-awesome-reveal";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
+function AnimatedComponent({ children }) {
+  return <Reveal keyframes={customAnimation}>{children}</Reveal>;
+}
 
 const ProfComponent = () => {
   return (
     <Container id="home">
-      <Slide direction="left">
+        <AnimatedComponent>
         <Texts>
+      <Slide direction="left">
+          <Fade left>
           <h4>Hello I am</h4>
           <h1>Sakshi Sahu</h1>
           <p>
@@ -19,7 +28,10 @@ const ProfComponent = () => {
           </p>
           <button><a href="mailto:serratia070@gmail.com">Let's connect</a>
             </button>
+          </Fade>
+          </Slide>
           <Social>
+            <Zoom>
             <h4>Check out my :</h4>
             <div className="social-icons">
               <span>
@@ -43,16 +55,22 @@ const ProfComponent = () => {
                 </a>
               </span>
             </div>
+          </Zoom>
           </Social>
         </Texts>
-      </Slide>
+        </AnimatedComponent>
+      {/* </Slide> */}
       <Slide direction="right">
+        <AnimatedComponent>
         <Profile>
+          {/* <Fade right> */}
           <img
             src={ss}
             alt="profile"
-          />
+            />
+            {/* </Fade> */}
         </Profile>
+            </AnimatedComponent>
       </Slide>
     </Container>
   );
@@ -60,6 +78,16 @@ const ProfComponent = () => {
 
 export default ProfComponent;
 
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, -200px);
+  }
+to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`
 const Container = styled.div`
   display: flex;
   gap: 2rem;
@@ -68,11 +96,20 @@ const Container = styled.div`
   margin: 0 auto;
 //   background-color:lavender;
   z-index: 1;
-  width: 85%;
+  width: 90%;
+  @media (max-width: 840px) {
+    width: 95%;
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 const Texts = styled.div`
   flex: 1;
   text-align:left;
+  h3{
+    font-size:1.5rem;
+  }
   h4{
     padding: 0 0;
     font-weight: 500;
@@ -111,7 +148,13 @@ const Social = styled.div`
   align-items: center;
   gap: 1rem;
   h4{
+    font-size: 1rem;
+  }
+  p {
     font-size: 0.9rem;
+    @media(max-width: 690px) {
+      font-size: 0.7rem;
+    }
   }
   .social-icons {
     gap: 1rem;
@@ -147,5 +190,14 @@ const Profile = styled.div`
       border-radius:15px;
       transform: translateY(-10px);
     }
+  }
+  @media (max-width: 790px) {
+    width: 20rem;
+  }
+  @media (max-width: 660px) {
+    width: 18rem;
+  }
+  @media (max-width: 640px) {
+    width: 100%;
   }
 `;
