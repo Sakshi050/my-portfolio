@@ -20,24 +20,24 @@ const skills = () => {
         </Zoom>
         <Cards>
           <Fade cascade>
-            <Slide direction='right'>
+            <Slide triggerOnce direction='right'>
                 <Card Icon={FaHtml5} title={"HTML5"}/>
             </Slide>
-            <Slide direction='right'>
+            <Slide triggerOnce direction='right'>
                 <Card Icon={IoLogoCss3} title={"CSS3"}/>
             </Slide>
-            <Slide direction='right'>
+            <Slide triggerOnce direction='right'>
                 <Card Icon={IoLogoJavascript} title={"JavaScript"}/>
             </Slide>
             </Fade>
             <Fade cascade>
-            <Slide direction='right'>
+            <Slide triggerOnce direction='right'>
                 <Card Icon={GrReactjs} title={"React"}/>
             </Slide>
-            <Slide direction='right'>
+            <Slide triggerOnce direction='right'>
                 <Card Icon={SiCplusplus} title={"C++"}/>
             </Slide>
-            <Slide direction='right'>
+            <Slide triggerOnce direction='right'>
                 <Card Icon={FaJava} title={"Java"}/>
             </Slide>
           </Fade>

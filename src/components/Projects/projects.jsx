@@ -15,7 +15,7 @@ const projects = () => {
       </Zoom>
       <div className='proj'>
         <Fade right cascade>
-        <Slide direction='left'>
+        <Slide triggerOnce direction='left'>
           <span>
             <Project title={"Travel Blog"} desc={"Designed a Travel Blog website using HTML,CSS and JavaScript.Various concepts of CSS such as flexbox, hover effects, keyframes have been implemented."} />
             <span>
@@ -24,7 +24,7 @@ const projects = () => {
             </span>
           </span>
         </Slide>
-        <Slide direction='left'>
+        <Slide triggerOnce direction='left'>
           <span>
             <Project title={"Simple Calculator"} desc={"This is a Simple Calculator website I created using HTML,CSS and JavaScript.Various concepts of CSS such as flexbox, hover effects, keyframes have been implemented."} />
             <span>

@@ -19,7 +19,7 @@ const ProfComponent = () => {
     <Container id="home">
         <AnimatedComponent>
         <Texts>
-      <Slide direction="left">
+      <Slide fraction={0} triggerOnce direction="left">
           <Fade left>
           <h4>Hello I am</h4>
           <h1>Sakshi Sahu</h1>
@@ -60,7 +60,7 @@ const ProfComponent = () => {
         </Texts>
         </AnimatedComponent>
       {/* </Slide> */}
-      <Slide direction="right">
+      <Slide fraction={0} triggerOnce direction="right">
         <AnimatedComponent>
         <Profile>
           {/* <Fade right> */}
