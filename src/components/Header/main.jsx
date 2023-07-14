@@ -22,9 +22,9 @@ const ProfComponent = () => {
       <Slide fraction={0} triggerOnce direction="left">
           <Fade left>
           <h4>Hi There!</h4>
-          <h1>Sakshi Sahu</h1>
+          <h1>I am Sakshi Sahu</h1>
           <p>
-            I am a 3rd year Undergrad at National Institute Of Technology Raipur pursuing B.Tech in Information Technology. 
+            I'm a 3rd year Undergrad at National Institute Of Technology Raipur pursuing B.Tech in Information Technology. 
           </p>
           <button><a href="mailto:serratia070@gmail.com">Let's connect</a>
             </button>
