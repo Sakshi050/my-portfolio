@@ -17,19 +17,19 @@ const projects = () => {
         <Fade right cascade>
         <Slide triggerOnce direction='left'>
           <span>
-            <Project title={"Travel Blog"} desc={"Designed a Travel Blog website using HTML,CSS and JavaScript.Various concepts of CSS such as flexbox, hover effects, keyframes have been implemented."} />
+            <Project title={"Food Recipe Search Tool"} desc={"Developed a JS project to search over 5000+ food recipes using API calls. Various concepts such as event-listeners, media queries, selectors have been implemented."} />
             <span>
-              <a href="https://github.com/Sakshi050/Travel-blog"><BsGithub /></a>
-              <a href="https://sakshi050.github.io/Travel-blog/"><CgWebsite /></a>
+              <a href="https://github.com/Sakshi050/food_search_api/"><BsGithub /></a>
+              <a href="https://sakshi050.github.io/food_search_api/"><CgWebsite /></a>
             </span>
           </span>
         </Slide>
         <Slide triggerOnce direction='left'>
           <span>
-            <Project title={"Simple Calculator"} desc={"This is a Simple Calculator website I created using HTML,CSS and JavaScript.Various concepts of CSS such as flexbox, hover effects, keyframes have been implemented."} />
+            <Project title={"Travel Blog Website"} desc={"Designed a Travel Blog website using HTML,CSS and JavaScript.Various concepts of CSS such as flexbox, hover effects, keyframes have been implemented."} />
             <span>
-              <a href="https://github.com/Sakshi050/calculator"><BsGithub /></a>
-              <a href="https://sakshi050.github.io/calculator/"><CgWebsite /></a>
+              <a href="https://github.com/Sakshi050/Travel-blog"><BsGithub /></a>
+              <a href="https://sakshi050.github.io/Travel-blog/"><CgWebsite /></a>
             </span>
           </span>
         </Slide>

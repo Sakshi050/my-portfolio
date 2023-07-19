@@ -24,6 +24,9 @@ const Container=styled.div`
   padding:2.5rem;
   cursor:pointer;
   border-radius:5px;
+  :hover{
+    box-shadow: 3px 3px 5px;
+  }
   p{
     color:wheat;
   }

@@ -21,7 +21,7 @@ const skills = () => {
         <Cards>
           <Fade cascade>
             <Slide triggerOnce direction='right'>
-                <Card Icon={FaHtml5} title={"HTML5"}/>
+                <Card Icon={FaHtml5} title={"HTML5"} link={"https://developer.mozilla.org/en-US/docs/Glossary/HTML5"}/>
             </Slide>
             <Slide triggerOnce direction='right'>
                 <Card Icon={IoLogoCss3} title={"CSS3"}/>
