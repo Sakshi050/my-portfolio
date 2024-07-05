@@ -24,9 +24,9 @@ const ProfComponent = () => {
           <h4>Hi There!</h4>
           <h1>I am Sakshi Sahu</h1>
           <p>
-            I'm a 3rd year Undergrad at National Institute Of Technology Raipur pursuing B.Tech in Information Technology. 
+            I'm a final year Undergrad at National Institute Of Technology Raipur pursuing B.Tech in Information Technology. 
           </p>
-          <button><a href="mailto:serratia070@gmail.com">Let's connect</a>
+          <button><a href="mailto:sakshi.583sahu@gmail.com">Let's connect</a>
             </button>
           </Fade>
           </Slide>
