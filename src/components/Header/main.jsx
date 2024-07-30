@@ -5,7 +5,8 @@ import {FaWhatsapp} from "react-icons/fa";
 import {FaLinkedinIn} from "react-icons/fa";
 import {ImTwitter} from "react-icons/im";
 import {Slide} from "react-awesome-reveal";
-import ss from "../Header/ss.png";
+// import ss from "../Header/ss.png";
+import sakshi_port from "../Header/sakshi_port.jpg";
 import { Fade,Zoom } from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -24,7 +25,7 @@ const ProfComponent = () => {
           <h4>Hello I am</h4>
           <h1>Sakshi Sahu</h1>
           <p>
-            I am a 3rd year Undergrad at National Institute Of Technology Raipur pursuing B.Tech in Information Technology. 
+            I am a final year Undergrad at National Institute Of Technology Raipur pursuing B.Tech in Information Technology. 
           </p>
           <button><a href="mailto:serratia070@gmail.com">Let's connect</a>
             </button>
@@ -65,7 +66,7 @@ const ProfComponent = () => {
         <Profile>
           {/* <Fade right> */}
           <img
-            src={ss}
+            src={sakshi_port}
             alt="profile"
             />
             {/* </Fade> */}
