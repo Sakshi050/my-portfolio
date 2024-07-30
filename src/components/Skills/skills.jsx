@@ -3,9 +3,15 @@ import styled from "styled-components";
 import {FaHtml5} from "react-icons/fa";
 import {IoLogoCss3} from "react-icons/io";
 import {IoLogoJavascript} from "react-icons/io";
+import { SiJquery } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 import {SiCplusplus} from "react-icons/si";
 import {FaJava} from "react-icons/fa";
 import {GrReactjs} from "react-icons/gr";
+import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandTypescript } from "react-icons/tb";
+import { GrMysql } from "react-icons/gr";
 import {Slide} from "react-awesome-reveal"
 import { Fade,Zoom } from "react-awesome-reveal";
 import Card from "../Skills/card";
@@ -29,10 +35,28 @@ const skills = () => {
             <Slide triggerOnce direction='right'>
                 <Card Icon={IoLogoJavascript} title={"JavaScript"}/>
             </Slide>
+            <Slide triggerOnce direction='right'>
+                <Card Icon={SiJquery} title={"jQuery"}/>
+            </Slide>
+            <Slide triggerOnce direction='right'>
+                <Card Icon={SiExpress} title={"Express.js"}/>
+            </Slide>
+            <Slide triggerOnce direction='right'>
+                <Card Icon={FaNodeJs} title={"Node.js"}/>
+            </Slide>
             </Fade>
             <Fade cascade>
             <Slide triggerOnce direction='right'>
                 <Card Icon={GrReactjs} title={"React"}/>
+            </Slide>
+            <Slide triggerOnce direction='right'>
+                <Card Icon={TbBrandNextjs} title={"Next.js"}/>
+            </Slide>
+            <Slide triggerOnce direction='right'>
+                <Card Icon={TbBrandTypescript} title={"Typescript"}/>
+            </Slide>
+            <Slide triggerOnce direction='right'>
+                <Card Icon={GrMysql} title={"MYSQL"}/>
             </Slide>
             <Slide triggerOnce direction='right'>
                 <Card Icon={SiCplusplus} title={"C++"}/>
@@ -60,7 +84,7 @@ h1{
 `;
 const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 3.5rem;
   margin-top: 4rem;
   cursor:pointer;
