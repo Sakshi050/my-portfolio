@@ -26,13 +26,22 @@ const projects = () => {
         </Slide>
         <Slide triggerOnce direction='left'>
           <span>
+            <Project title={"Simon Game"} desc={"Developed a memory-based game where a sequence of color patterns is displayed on the screen. The player must replicate the patterns in the correct order to advance to the next level."} />
+            <span>
+              <a href="https://github.com/Sakshi050/Simon_Game"><BsGithub /></a>
+              <a href="https://sakshi050.github.io/Simon_Game/"><CgWebsite /></a>
+            </span>
+          </span>
+        </Slide>
+        {/* <Slide triggerOnce direction='left'>
+          <span>
             <Project title={"Travel Blog Website"} desc={"Designed a Travel Blog website using HTML,CSS and JavaScript.Various concepts of CSS such as flexbox, hover effects, keyframes have been implemented."} />
             <span>
               <a href="https://github.com/Sakshi050/Travel-blog"><BsGithub /></a>
               <a href="https://sakshi050.github.io/Travel-blog/"><CgWebsite /></a>
             </span>
           </span>
-        </Slide>
+        </Slide> */}
         </Fade>
       </div>
     </Container>
@@ -46,9 +55,14 @@ const Container = styled.div`
   margin: 3rem auto;
   padding:0.5rem;
   .proj{
-      display: flex;
-      align-items: center;
-      gap: 2.5rem;
+      // display: flex;
+      // align-items: center;
+      // gap: 2.5rem;
+      display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+  cursor:pointer;
     }
     a{
         color:wheat;
@@ -60,7 +74,7 @@ const Container = styled.div`
         // position:absolute;
     }
     span{
-        gap: 5.5rem;
+        gap: 3.5rem;
         margin:15px 15px;
         border-radius:10px;
         padding:10px 10px;
