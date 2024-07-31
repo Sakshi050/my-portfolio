@@ -18,7 +18,7 @@ const Header = () => {
                     <span><a href="#skills">Skills</a></span>
                     <span><a href="#projects">Projects</a></span>
                     <span><a href="#footer">Contact</a></span>
-                    <span><a href="https://drive.google.com/file/d/1iIU07igpsXqXHXzAa5WTfdKtH3wxjzkN/view?usp=sharing">Resume</a></span>
+                    <span><a href="https://drive.google.com/file/d/16WGnU_WgNIXUnE7M5xdE5pYnkia_fi07/view?usp=sharing">Resume</a></span>
                 </Nav>
             </Fade>
             <div
